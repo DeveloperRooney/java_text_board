@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Article extends Object {
 	private int id;
+	private int boardId;
 	private String regDate;
 	private String updateDate;
 	private String title;

@@ -17,10 +17,11 @@ public class ArticleRepository {
 
 	public int write(String title, String body) {
 		int id = lastId + 1;
+		int boardId = 1;
 		String regDate = Util.getNowDateStr();
 		String updateDate = regDate;
 
-		Article article = new Article(id, regDate, updateDate, title, body);
+		Article article = new Article(id, boardId, regDate, updateDate, title, body);
 		articles.add(article);
 
 		lastId = id;
